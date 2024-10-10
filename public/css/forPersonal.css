@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #e9ebee; 
+}
+
+.filter label{
+    font-size: 20px;
+}
+
+.filter input{
+    height: 25px;
+}
+
+.filter select{
+    height: 25px;
+}
+
+.zatemnenie {
+    background: rgba(102, 102, 102, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.okno {
+    width: 600px;
+    height: 500px;
+    text-align: center;
+    padding: 15px;
+    /* border: 3px solid #0000cc; */
+    border-radius: 10px;
+    /* color: #0000cc; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #fff;
+}
+
+.labels{
+    margin-left: 20%;
+    float: left;
+    text-align: right;
+}
+.labels label{
+    font-size: 22px;
+    margin: 1px;
+    display: inline-block;
+}
+.inputs{
+    margin-left: 38%;
+    text-align: left;
+}
+.inputs select{
+    height: 29px;
+    width: 170px;
+    margin: 5px;
+
+}
+.inputs input{
+    height: 20px;
+    margin: 5px;
+}
+.zatemnenie:target {display: block;}
+.close {
+    display: inline-block;
+    /* border: 1px solid #0000cc; */
+    /* color: #0000cc; */
+    padding: 0 12px;
+    margin: 10px;
+    /* background: #f2f2f2; */
+    cursor:pointer;
+}
+/* .close:hover {background: #e6e6ff;} */
+
+    

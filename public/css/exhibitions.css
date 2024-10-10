@@ -1,0 +1,273 @@
+html, body{
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #e9ebee; 
+}
+
+.addExh{
+    display: none;
+}
+
+.exhs{
+    display: grid;
+    grid-template-columns: 98%;
+    /* grid-template-rows: 150px 150px; */
+    padding-left: 0px;
+    padding-right: 10px;
+}
+.outWorks{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* grid-template-rows: 150px 150px; */
+    padding-left: 0px;
+    padding-right: 10px;
+}
+.outWorks li{
+    text-align: center;
+    list-style-type: none; 
+    background-color: #cdbfe4;
+    padding: 7px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.inWorks{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* grid-template-rows: 150px 150px; */
+    padding-left: 0px;
+    padding-right: 10px;
+}
+.inWorks li{
+    text-align: center;
+    list-style-type: none; 
+    background-color: #bfe4c5;
+    padding: 7px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+.exhs li{
+    text-align: center;
+    list-style-type: none; 
+    background-color: #cdbfe4;
+    padding: 7px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.works{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    /* grid-template-rows: 150px 150px; */
+    padding-left: 0px;
+    padding-right: 10px;
+
+}
+
+.works li{
+    text-align: center;
+    list-style-type: none; 
+    background-color: #e7e1f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.works .imgcontainer{
+    width: 240px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.works li img{
+    height: 100%;
+    /* margin-top: -100px;
+    margin-left: -130px; */
+}   
+
+.EditExh {
+    display: none;
+}
+
+.DelExh{
+    display: none;
+}
+
+.zatemnenie {
+    background: rgba(102, 102, 102, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.okno {
+    width: 800px;
+    height: 400px;
+    text-align: center;
+    padding: 15px;
+    float: top;
+    position: absolute;
+    border-radius: 10px;
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #fff;
+}
+
+.okno table td{
+    width: 50%;
+    vertical-align:top; 
+}
+
+.labels{
+    margin-left: 20%;
+    float: left;
+    text-align: right;
+}
+.labels label{
+    font-size: 20px;
+    margin: 2px;
+    display: inline-block;
+}
+.inputs{
+    margin-left: 38%;
+    text-align: left;
+}
+.inputs select{
+    height: 25px;
+    width: 170px;
+    margin: 5px;
+
+}
+.inputs input{
+    height: 20px;
+    margin: 5px;
+}
+
+.zatemnenie:target {display: block;}
+.close {
+    display: inline-block;
+    /* border: 1px solid #0000cc; */
+    /* color: #0000cc; */
+    padding: 0 12px;
+    margin: 10px;
+    /* background: #f2f2f2; */
+    cursor:pointer;
+}
+
+.zatemnenie2 {
+    background: rgba(102, 102, 102, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.okno2 {
+    width: 800px;
+    height: 400px;
+    text-align: center;
+    padding: 15px;
+    float: top;
+    position: absolute;
+    border-radius: 10px;
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #fff;
+}
+
+.zatemnenie2:target {display: block;}
+.close2 {
+    display: inline-block;
+    /* border: 1px solid #0000cc; */
+    /* color: #0000cc; */
+    padding: 0 12px;
+    margin: 10px;
+    /* background: #f2f2f2; */
+    cursor:pointer;
+}
+
+.Feedbacks{
+    display: grid;
+    grid-template-columns: 100%;
+    /* grid-template-rows: 150px 150px; */
+    padding-left: 0px;
+    padding-right: 10px;
+    text-align: left;
+
+}
+
+.Feedback{
+    width: 80%;
+    height: 60px;
+    display: inline-block;
+
+}
+
+.Feedbacks li{
+    text-align: center;
+    list-style-type: none; 
+    background-color: #e7e1f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.labels2{
+    margin-left: 20%;
+    float: left;
+    text-align: right;
+}
+.labels2 label{
+    font-size: 20px;
+    margin: 2px;
+    display: inline-block;
+}
+.inputs2{
+    margin-left: 38%;
+    text-align: left;
+}
+.inputs2 select{
+    height: 25px;
+    width: 170px;
+    margin: 5px;
+
+}
+.inputs2 input{
+    height: 20px;
+    margin: 5px;
+}
+
+.ModerDel{
+    display: none;
+}
+
+.ButClick{
+    display: none;
+}

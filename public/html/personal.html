@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width" />
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="forPersonal.css">
+ <script src="personal.js"></script>
+
+</head>
+<body>
+<h2>Список пользователей</h2> 
+<h3>Фильтр</h3>
+<div class = "filter">
+  <label for="FuserName">Логин:</label>
+  <input type="text" id="FuserName" name="FuserName">
+  <label for="FRole">Роль:</label>
+  <select id = "FRole">
+    <option id="userRoleNone">NONE</option>
+    <option id="userRoleAdmin">ADMIN</option>
+    <option id="userRoleManager">MANAGER</option>
+    <option id="userRoleGuest">GUEST</option>
+  </select>
+  <button onclick="getClients()">Поиск</button>
+</div><br>
+<a href="#zatemnenie"><button onclick="addClick()">Добавить</button></a>
+<div id="zatemnenie" class="zatemnenie">
+    <div id="okno" class="okno">
+        <a style="float: right;" href="#" class="close"><input type="button" value="X"></a>
+        <h2>Введиите данные нового пользователя</h2><br>
+        <form>
+            <div class="labels">
+              <label for="userName">Логин:</label><br>
+              <label for="Name">Имя:</label><br>
+              <label for="Surname">Фамилия:</label><br>
+              <label for="Phone">Телефон:</label><br>
+              <label for="Role">Роль:</label><br>
+              <label for="userPassword">Пароль:</label><br>
+          </div>
+          <div class="inputs">
+              <input type="text" id="userName" name="userName"><br>
+              <input type="text" id="Name" name="Name"><br>
+              <input type="text" id="Surname" name="Surname"><br>
+              <input type="text" id="Phone" name="Phone"><br>
+              <select id = "userRole">
+                <option id="userRoleAdmin">ADMIN</option>
+                <option id="userRoleManager">MANAGER</option>
+                <option id="userRoleGuest">GUEST</option>
+              </select><br>
+              <input type="text" id="userPassword" name="userPassword"><br>
+            </div>
+
+        </form>
+        <a href="#" class="close" id="addHref"><button onclick="addUser()">Добавить</button></a>
+        <a href="#" class="close" id="editHref"><button onclick="editUser()">Редактировать</button></a>
+    </div>
+</div>
+<div class="result" id = "result">
+ <!-- <input type="hidden" name="id" value="0" />
+ <p>
+ <label>Логин:</label><br>
+ <input name="name" />
+ </p>
+ <p>
+ <label>Пароль:</label><br>
+ <input name="password" type="text" />
+ </p>
+ <p>
+ <button id="submitBtn" type="submit">Сохранить</button>
+ <button id="resetBtn">Сбросить</button>
+ </p> -->
+</div>
+<!-- <table>
+ <thead><tr><th>Id</th><th>Логин</th><th>Пароль</th><th></th></tr></thead>
+ <tbody></tbody>
+</table> -->
+</body>
+</html>

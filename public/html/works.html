@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width" />
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="work.css">
+ <script src="work.js"></script>
+
+</head>
+<body>
+    <h2>Список работ</h2>  
+    <h3>Фильтр</h3>
+    <div class = "filter">
+      <label for="FName">Название:</label>
+      <input type="text" id="FName" name="FName">
+      <label for="FAuthor">Автор:</label>
+      <input type="text" id="FAuthor" name="FAuthor">
+      <label for="FGenre">Жанр:</label>
+      <input type="text" id="FGenre" name="FGenre">
+      <button onclick="getWorks()">Поиск</button>
+    </div><br> 
+    <a href="#zatemnenie"><button>Добавить</button></a>
+    <div id="zatemnenie" class="zatemnenie">
+        <div id="okno" class="okno">
+        <a style="float: right;" href="#" class="close"><input type="button" value="X"></a>
+        <h2>Введиите данные новой работы</h2><br>
+        <form>
+            <div class="labels">
+              <label for="Name">Название:</label><br>
+              <label for="Author">Автор:</label><br>
+              <label for="Date">Дата создания:</label><br>
+              <label for="Genre">Жанр:</label><br>
+              <label for="URL">URL картинки:</label><br>
+            </div>
+            <div class="inputs">
+              <input type="text" id="Name" name="Name"><br>
+              <input type="text" id="Author" name="Author"><br>
+              <input type="text" id="Date" name="Date"><br>
+              <input type="text" id="Genre" name="Genre"><br>
+              <input type="text" id="URL" name="URL"><br>
+            </div>
+
+        </form>
+        <a href="#" class="close" id="addHref"><button onclick="addWork()">Добавить</button></a>
+        </div>
+
+    </div>
+    <ul id="works" class="works">
+            
+    </ul>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Gallery</title>
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div id = "container", class="container">
+       
+        <div class="menu" id="menu">
+                <li onclick="$('#content').load('exhibitions.html')"><a>Выставки</a></li>
+                <li onclick="$('#content').load('cabinet.html')"><a>Мои билеты</a></li>
+                <li id="forPersonal" class="forPersonal" onclick="$('#content').load('personal.html')"><a>Персонал</a></li>
+                <li id ="worksForP" class="forPersonal" onclick="$('#content').load('works.html')"><a>Работы</a></li>
+        </div>
+        <div class = "top" id="top">
+            <div class = "namelabel">
+                <h2>Gallery</h2>
+            </div>
+            <div class = "autho">
+                <h4><a id="notAutho" href="authorization.html">Авторизоваться</a></h4>
+                <h4><a id="Autho" onclick="DelToken()">Выход</a></h4>
+            </div>
+        </div>
+        <div class="content" id="content">
+               
+        </div>
+    </div>
+ <script src = "homepage.js"></script>
+</body>
+</html>

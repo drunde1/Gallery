@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>For Personal</title>
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="forAutho.css">
+ <script src = "authorization.js"></script>
+</head>
+<body>
+    <div class="form">
+        <h3>Вход в  систему</h3>
+        <div class="labels">
+            <label for="clientLogin">Логин:</label><br>
+            <label for="clientPassword">Парооль:</label><br>
+        </div>
+        <div class="inputs">
+            <input type="text" id="clientLogin" name="clientLogin"><br>
+            <input type="text" id="clientPassword" name="clientPassword"><br>
+        </div>
+        <div class="but">
+            <button type="submit" name="enterBut" onclick="login()">Войти</button> / 
+            <button type="submit" name="signUpBut" onclick="signUp()">Зарегестрироваться</button>
+        </div>
+    </div>
+</body>
+</html>

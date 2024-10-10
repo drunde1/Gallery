@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width" />
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="exhibitions.css">
+ <script src="exhibitions.js"></script>
+
+</head>
+<body>
+    <h2>Выставки</h2>   
+    <div id="addExh"><a href="#zatemnenie"><button onclick="addClick()">Добавить</button></a></div>
+    <div id="zatemnenie" class="zatemnenie">
+        <div id="okno" class="okno">
+        <a style="float: right;" href="#" class="close"><input type="button" value="X"></a>
+        <h2>Введиите данные новой работы</h2><br>
+        <form>
+            <div class="labels">
+              <label for="EName">Название:</label><br>
+              <label for="date_start">Дата начала</label><br>
+              <label for="date_end">Дата конца:</label><br>
+              <label for="Cost">Билет:</label><br>
+              <label for="info">Информация:</label><br>
+            </div>
+            <div class="inputs">
+              <input type="text" id="EName" name="EName"><br>
+              <input type="text" id="Date_start" name="Date_start"><br>
+              <input type="text" id="Date_end" name="Date_end"><br>
+              <input type="text" id="Cost" name="Cost" class="Cost"><br>
+              <input type="text" id="Info" name="Info" class="Info"><br>
+            </div>
+
+        </form>
+        <a href="#" class="close" id="addHref"><button onclick="addExh()">Добавить</button></a>
+        <a href="#" class="close" id="editHref"><button onclick="editExh()">Редактировать</button></a>
+        <table id="table">
+          <tr><td><h4>Не в выставке</h4></td><td><h4>В выставке</h4></td></tr>
+          <tr><td><ul id = "outWorks" class="outWorks"></ul></td><td><ul id = "inWorks" class="inWorks"></ul></td></tr>
+        </table>
+        </div>
+    </div>
+    <div id="zatemnenie2" class="zatemnenie2">
+        <div id="okno2" class="okno2">
+        <a style="float: right;" href="#" class="close2"><input type="button" value="X"></a>
+        <h2>Введиите ваши данные</h2><br>
+        <form>
+            <div class="labels2">
+              <label for="ExhName">Выставка:</label><br>
+              <label for="UserName">Ваше имя:</label><br>
+              <label for="UserSurname">Ваша фамилия:</label><br>
+              <label for="UserPhone">Ваш телефон:</label><br>
+              <label for="ExhCost">Цена за билет:</label><br>
+            </div>
+            <div class="inputs2">
+              <input type="text" id="ExhName" name="ExhName"><br>
+              <input type="text" id="UserName" name="UserName"><br>
+              <input type="text" id="UserSurname" name="UserSurname"><br>
+              <input type="text" id="UserPhone" name="UserPhone"><br>
+              <label id="ExhCost" name="ExhCost" class="ExhCost"></label><br><br>
+            </div>
+
+        </form>
+        <a href="#" class="close2" id="editHref"><button onclick="buyTicket()">Купить</button></a>
+        </div>
+    </div>
+    <ul id="exhs" class="exhs">
+
+    </ul>
+
+</body>
+</html>
